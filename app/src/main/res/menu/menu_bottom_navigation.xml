@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homee" android:title="" android:icon="@drawable/homeline" />
+    <item android:id="@+id/food" android:title="" android:icon="@drawable/fast_food"/>
+    <item android:id="@+id/order" android:title="" android:icon="@drawable/order_online"/>
+    <item android:id="@+id/setting" android:title="" android:icon="@drawable/management"/>
+</menu>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.VerifyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBackVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_13sdp"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tvVerify"
+            android:layout_width="219dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_verify"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.427"
+            app:layout_constraintStart_toEndOf="@+id/imgBackVerify"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="#D94247" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_verify" />
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/cantora_one"
+            android:gravity="center"
+            android:text="Please Enter The Code Sent To Your Phone Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="Enter The 4 Digit Code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtInputPhone1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:maxLength="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/edtInputPhone2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:maxLength="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/edtInputPhone3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:maxLength="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/edtInputPhone4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:maxLength="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/edtInputPhone5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:maxLength="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/edtInputPhone6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:maxLength="1"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnVeriry"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_backgr"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Verify"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp" />
+        <TextView
+            android:id="@+id/tvResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/didn_t_get_the_code_resend_code"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+             />
+
+        <TextView
+            android:id="@+id/tvGiveFeedback"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/having_trouble_give_us_a_feedback"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

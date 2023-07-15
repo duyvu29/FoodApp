@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterFoodActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/forground_splash"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg4" />
+
+
+        <ImageView
+            android:id="@+id/imdBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/baloo_paaji"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="#D94247"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_fullname"
+            android:drawablePadding="@dimen/_20sdp"
+            android:hint="@string/full_name1"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#E9EBEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+        <EditText
+            android:id="@+id/edtNumberPhone"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="@dimen/_20sdp"
+            android:hint="@string/phone"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="#E9EBEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtFullName" />
+        <EditText
+            android:id="@+id/edtMail"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:drawablePadding="@dimen/_20sdp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="#E9EBEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNumberPhone" />
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawablePadding="@dimen/_20sdp"
+            android:hint="@string/password1"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="#E9EBEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtMail" />
+        <EditText
+            android:id="@+id/edtLocaltion"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_add_location_alt_24"
+            android:drawablePadding="@dimen/_20sdp"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#E9EBEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+        <CheckBox
+            android:id="@+id/cbRules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Agree to all terms of the app"
+            android:textColor="#BFBFBF"
+            android:checked="false"
+            android:buttonTint="#BFBFBF"
+            app:layout_constraintTop_toBottomOf="@+id/edtLocaltion" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_backgr"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cbRules"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

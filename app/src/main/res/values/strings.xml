@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="easy_food"> Easy <b><font color="#D94247">Food</font></b> </string>
+    <string name="get_started">Get started</string>
+    <string name="full_name">Full name <b> <font color="#D94247"></font></b></string>
+    <string name="number_phone">Number phone</string>
+    <string name="enter_your_phone_number_to_receive_a_verification_code">Enter your Phone number to receive a Verification Code</string>
+    <string name="having_trouble_give_us_a_feedback">Having trouble? Give us a<b> <font color="#D94247">feedback</font></b></string>
+    <string name="email_number_phone">Email/Number phone<b> <font color="#D94247">*</font></b></string>
+    <string name="password">Password<b> <font color="#D94247">*</font></b></string>
+    <string name="didn_t_get_the_code_resend_code">Didn\'t get the code? <b> <font color="#D94247">Resend code.</font></b></string>
+    <string name="full_name1">Full name<b> <font color="#D94247">*</font></b></string>
+    <string name="phone">Phone<b><font color="#D94247">*</font></b></string>
+    <string name="email">Email<b><font color="#D94247">*</font></b></string>
+    <string name="password1">Password<b> <font color="#D94247">*</font></b></string>
+    <string name="address">Address<b><font color="#D94247">*</font></b></string>
+    <string name="easy_food1"> Easy<b> <font color="#D94247">Food</font></b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="c_a_h_ng"><b> <font color="#D94247">Cửa hàng</font></b></string>
+    <string name="g_i">Đề xuất cho bạn</string> <!--gray-->
+</resources>
